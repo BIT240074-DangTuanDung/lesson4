@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Quản lý Sinh viên</string>
+
+    <!-- Navigation / Header titles -->
+    <string name="student_list_title">Danh sách Sinh viên</string>
+    <string name="student_detail_title">Thông tin chi tiết Sinh viên</string>
+    <string name="add_student_title">Thêm mới Sinh viên</string>
+    <string name="edit_student_title">Sửa thông tin Sinh viên</string>
+
+    <!-- Field labels -->
+    <string name="full_name">Họ và tên</string>
+    <string name="student_code">Mã số sinh viên</string>
+    <string name="email">Email</string>
+    <string name="avatar_url">Ảnh đại diện</string>
+
+    <!-- Placeholders / Hints -->
+    <string name="hint_full_name">Nhập họ và tên sinh viên</string>
+    <string name="hint_student_code">Nhập mã số SV (VD: SV001)</string>
+    <string name="hint_email">Nhập địa chỉ email</string>
+    <string name="hint_avatar_url">Dán link URL ảnh hoặc chọn từ thiết bị</string>
+    <string name="search_hint">Tìm kiếm theo tên hoặc MSSV&#8230;</string>
+    <string name="empty_list_msg">Chưa có sinh viên nào.\nNhấn nút + để thêm sinh viên mới!</string>
+
+    <!-- Buttons -->
+    <string name="btn_add">Thêm sinh viên</string>
+    <string name="btn_edit">Sửa thông tin</string>
+    <string name="btn_delete">Xóa sinh viên</string>
+    <string name="btn_save">Lưu thông tin</string>
+    <string name="btn_cancel">Hủy</string>
+    <string name="btn_pick_image">Chọn ảnh từ thiết bị</string>
+    <string name="btn_or_enter_url">HOẶC nhập link URL ảnh:</string>
+
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_edit_title">Xác nhận sửa</string>
+    <string name="confirm_edit_message">Bạn có muốn sửa thông tin SV không?</string>
+    <string name="confirm_delete_title">Xác nhận xóa</string>
+    <string name="confirm_delete_message">Bạn có muốn xóa thông tin SV không?</string>
+    <string name="btn_yes">Có</string>
+    <string name="btn_no">Không</string>
+
+    <!-- Toast / Feedback messages -->
+    <string name="msg_invalid_input">Vui lòng nhập đầy đủ thông tin (Họ tên, MSSV, Email)</string>
+    <string name="msg_duplicate_code">Mã số sinh viên đã tồn tại! Vui lòng chọn mã khác.</string>
+    <string name="msg_save_success">Đã thêm sinh viên thành công!</string>
+    <string name="msg_update_success">Cập nhật thông tin sinh viên thành công!</string>
+    <string name="msg_delete_success">Đã xóa sinh viên thành công!</string>
+    <string name="msg_student_not_found">Không tìm thấy sinh viên!</string>
+    <string name="msg_select_image_failed">Không thể xử lý ảnh đã chọn.</string>
+</resources>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F7">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@android:drawable/ic_menu_revert"
+            app:navigationIconTint="@android:color/white"
+            app:title="@string/add_student_title"
+            app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Avatar Preview & Selection -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginTop="8dp"
+                app:cardCornerRadius="55dp"
+                app:cardElevation="4dp"
+                app:strokeColor="?attr/colorPrimary"
+                app:strokeWidth="2dp">
+
+                <ImageView
+                    android:id="@+id/imgFormAvatarPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/avatar_url"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/ic_default_avatar" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPickImage"
+                style="@style/Widget.Material3.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/btn_pick_image"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_or_enter_url"
+                android:textColor="#757575"
+                android:textSize="12sp" />
+
+            <!-- Input Form Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="2dp"
+                app:strokeColor="#E0E0E0"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Avatar URL Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilAvatarUrl"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/avatar_url"
+                        app:endIconMode="clear_text">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtAvatarUrl"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_avatar_url"
+                            android:inputType="textUri"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Full Name Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilFullName"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/full_name"
+                        app:endIconMode="clear_text"
+                        app:startIconDrawable="@drawable/ic_person">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_full_name"
+                            android:inputType="textPersonName|textCapWords"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Student Code Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilStudentCode"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/student_code"
+                        app:endIconMode="clear_text"
+                        app:startIconDrawable="@drawable/ic_badge">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtStudentCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_student_code"
+                            android:inputType="textCapCharacters"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <!-- Email Input -->
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilEmail"
+                        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/email"
+                        app:endIconMode="clear_text"
+                        app:startIconDrawable="@drawable/ic_email">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_email"
+                            android:inputType="textEmailAddress"
+                            android:textSize="14sp" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Bottom Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCancel"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_cancel"
+                    android:textSize="15sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSave"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="0dp"
+                    android:layout_height="52dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_save"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Student Management</string>
+
+    <!-- Navigation / Header titles -->
+    <string name="student_list_title">Student List</string>
+    <string name="student_detail_title">Student Details</string>
+    <string name="add_student_title">Add New Student</string>
+    <string name="edit_student_title">Edit Student Info</string>
+
+    <!-- Field labels -->
+    <string name="full_name">Full Name</string>
+    <string name="student_code">Student ID</string>
+    <string name="email">Email</string>
+    <string name="avatar_url">Avatar Image</string>
+
+    <!-- Placeholders / Hints -->
+    <string name="hint_full_name">Enter full name</string>
+    <string name="hint_student_code">Enter student ID (e.g. SV001)</string>
+    <string name="hint_email">Enter email address</string>
+    <string name="hint_avatar_url">Paste image URL or pick file</string>
+    <string name="search_hint">Search student by name or ID&#8230;</string>
+    <string name="empty_list_msg">No students found.\nTap + button to add a new student!</string>
+
+    <!-- Buttons -->
+    <string name="btn_add">Add Student</string>
+    <string name="btn_edit">Edit</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_pick_image">Pick Image from Device</string>
+    <string name="btn_or_enter_url">OR enter image URL below:</string>
+
+    <!-- Confirmation Dialogs -->
+    <string name="confirm_edit_title">Confirm Edit</string>
+    <string name="confirm_edit_message">Do you want to edit student info?</string>
+    <string name="confirm_delete_title">Confirm Delete</string>
+    <string name="confirm_delete_message">Do you want to delete student info?</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+
+    <!-- Toast / Feedback messages -->
+    <string name="msg_invalid_input">Please fill in all required fields (Name, Student ID, Email)</string>
+    <string name="msg_duplicate_code">Student ID already exists! Please use a unique ID.</string>
+    <string name="msg_save_success">Student saved successfully!</string>
+    <string name="msg_update_success">Student updated successfully!</string>
+    <string name="msg_delete_success">Student deleted successfully!</string>
+    <string name="msg_student_not_found">Student not found!</string>
+    <string name="msg_select_image_failed">Failed to process selected image.</string>
+</resources>
